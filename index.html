@@ -45,12 +45,12 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            height: 400px;
+            height: 320px;
             max-height: 50vh;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 640px) {
             .chart-container {
-                height: 450px;
+                height: 400px;
             }
         }
         .gradient-text {
@@ -64,24 +64,24 @@
 
     <div class="container mx-auto p-4 md:p-8">
 
-        <header class="text-center my-12">
-            <h1 class="text-4xl md:text-6xl font-bold gradient-text mb-4">Gemini 2.5 Pro</h1>
-            <p class="text-xl md:text-2xl text-[#003F5C]">AIの進化を再定義する、次世代モデルの全貌</p>
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold gradient-text mb-4">Gemini 2.5 Pro</h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-[#003F5C]">AIの進化を再定義する、次世代モデルの全貌</p>
         </header>
 
-        <section id="key-stats" class="my-16">
+        <section id="key-stats" class="my-12 md:my-16">
              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#366E8A]">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#366E8A]">
                     <p class="text-5xl font-bold text-[#003F5C]">1470</p>
                     <p class="mt-2 text-lg text-gray-600">LMArena Eloスコア</p>
                     <p class="mt-1 text-sm text-gray-500">人間による評価で首位を獲得</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#74A6B8]">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#74A6B8]">
                     <p class="text-5xl font-bold text-[#003F5C]">100万</p>
                     <p class="mt-2 text-lg text-gray-600">トークンコンテキスト</p>
                     <p class="mt-1 text-sm text-gray-500">約150万語を一度に処理</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#003F5C]">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#003F5C]">
                     <p class="text-5xl font-bold text-[#003F5C]">8倍</p>
                     <p class="mt-2 text-lg text-gray-600">の最大出力トークン</p>
                     <p class="mt-1 text-sm text-gray-500">1.5 Pro比で64Kトークンに増加</p>
@@ -89,11 +89,11 @@
             </div>
         </section>
 
-        <section id="features" class="my-16">
+        <section id="features" class="my-12 md:my-16">
             <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
                 <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">核となる革新的機能</h2>
-                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">Gemini 2.5 Proは、単なる性能向上に留まらず、AIとの対話や開発のあり方を根本から変える新機能を搭載しています。これにより、より複雑で高度なタスクを、より直感的に、そして高い信頼性をもって実行できるようになります。</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12 px-2">Gemini 2.5 Proは、単なる性能向上に留まらず、AIとの対話や開発のあり方を根本から変える新機能を搭載しています。これにより、より複雑で高度なタスクを、より直感的に、そして高い信頼性をもって実行できるようになります。</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="text-center p-6 bg-[#BBE5F1] bg-opacity-30 rounded-lg flex flex-col justify-between">
                         <div>
                             <span class="text-5xl">🧠</span>
@@ -102,51 +102,57 @@
                         </div>
                         <p class="mt-3 text-xs font-semibold text-white bg-[#003F5C] rounded-full px-3 py-1 inline-block">Google AI Ultraで近日提供</p>
                     </div>
-                    <div class="text-center p-6 bg-[#BBE5F1] bg-opacity-30 rounded-lg">
-                        <span class="text-5xl">🔊</span>
-                        <h3 class="text-xl font-bold mt-4 text-[#003F5C]">ネイティブオーディオ</h3>
-                        <p class="mt-2 text-gray-600">人間の話し方を模倣し、より自然で表現力豊かな音声対話を実現。24以上の言語に対応します。</p>
+                    <div class="text-center p-6 bg-[#BBE5F1] bg-opacity-30 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <span class="text-5xl">🔊</span>
+                            <h3 class="text-xl font-bold mt-4 text-[#003F5C]">ネイティブオーディオ</h3>
+                            <p class="mt-2 text-gray-600">人間の話し方を模倣し、より自然で表現力豊かな音声対話を実現。24以上の言語に対応します。</p>
+                        </div>
                     </div>
-                    <div class="text-center p-6 bg-[#BBE5F1] bg-opacity-30 rounded-lg">
-                        <span class="text-5xl">🔍</span>
-                        <h3 class="text-xl font-bold mt-4 text-[#003F5C]">思考サマリー</h3>
-                        <p class="mt-2 text-gray-600">AIの思考プロセスを可視化し、透明性と監査可能性を提供。デバッグを容易にします。</p>
+                    <div class="text-center p-6 bg-[#BBE5F1] bg-opacity-30 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <span class="text-5xl">🔍</span>
+                            <h3 class="text-xl font-bold mt-4 text-[#003F5C]">思考サマリー</h3>
+                            <p class="mt-2 text-gray-600">AIの思考プロセスを可視化し、透明性と監査可能性を提供。デバッグを容易にします。</p>
+                        </div>
                     </div>
-                    <div class="text-center p-6 bg-[#BBE5F1] bg-opacity-30 rounded-lg">
-                        <span class="text-5xl">🛡️</span>
-                        <h3 class="text-xl font-bold mt-4 text-[#003F5C]">セキュリティ強化</h3>
-                        <p class="mt-2 text-gray-600">間接的なプロンプトインジェクション攻撃への耐性を大幅に向上させ、安全な運用を支援します。</p>
+                    <div class="text-center p-6 bg-[#BBE5F1] bg-opacity-30 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <span class="text-5xl">🛡️</span>
+                            <h3 class="text-xl font-bold mt-4 text-[#003F5C]">セキュリティ強化</h3>
+                            <p class="mt-2 text-gray-600">間接的なプロンプトインジェクション攻撃への耐性を大幅に向上させ、安全な運用を支援します。</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="benchmarks" class="my-16">
+        <section id="benchmarks" class="my-12 md:my-16">
             <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
                 <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">ベンチマーク性能比較</h2>
-                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">Gemini 2.5 Proは、主要な業界ベンチマークにおいて競合モデルを凌駕する性能を示しています。特に、専門的な知識と高度な推論を要する分野での優位性が際立っています。</p>
+                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12 px-2">Gemini 2.5 Proは、主要な業界ベンチマークにおいて競合モデルを凌駕する性能を示しています。特に、専門的な知識と高度な推論を要する分野での優位性が際立っています。</p>
                 <div class="chart-container">
                     <canvas id="benchmarkChart"></canvas>
                 </div>
-                 <p class="text-center text-sm text-gray-500 mt-4">出典: Gemini 2.5 Pro アップデート調査報告書 (GPQA diamond, Aider Polyglot, MMMUのスコアに基づく)</p>
+                 <p class="text-center text-sm text-gray-500 mt-4 px-2">出典: Gemini 2.5 Pro アップデート調査報告書 (GPQA diamond, Aider Polyglot, MMMUのスコアに基づく)</p>
             </div>
         </section>
 
-        <section id="architecture" class="my-16">
+        <section id="architecture" class="my-12 md:my-16">
             <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
                 <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">「思考モデル」アーキテクチャ</h2>
-                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">Gemini 2.5 Proの卓越した推論能力の背景には、「思考モデル」という独自の設計思想があります。応答を生成する前に、内部で多角的な思考プロセスを経ることで、より深く、精度の高い回答を導き出します。</p>
+                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12 px-2">Gemini 2.5 Proの卓越した推論能力の背景には、「思考モデル」という独自の設計思想があります。応答を生成する前に、内部で多角的な思考プロセスを経ることで、より深く、精度の高い回答を導き出します。</p>
                 <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
                     <div class="p-6 border-2 border-[#74A6B8] rounded-lg text-center w-full md:w-1/4">
                         <h3 class="font-bold text-[#003F5C]">1. 入力</h3>
                         <p class="text-sm">プロンプト受信</p>
                     </div>
-                    <div class="text-4xl text-[#366E8A] transform md:rotate-0 rotate-90">&rarr;</div>
+                    <div class="text-4xl text-[#366E8A] transform md:rotate-0 rotate-90">&darr;</div>
                     <div class="p-6 border-2 border-dashed border-[#366E8A] bg-[#BBE5F1] bg-opacity-20 rounded-lg text-center w-full md:w-1/2">
                         <h3 class="font-bold text-[#003F5C]">2. 内部思考プロセス (Deep Think)</h3>
                         <p class="text-sm">・複数仮説の生成と評価<br>・連鎖的思考<br>・知識の統合と推論</p>
                     </div>
-                     <div class="text-4xl text-[#366E8A] transform md:rotate-0 rotate-90">&rarr;</div>
+                     <div class="text-4xl text-[#366E8A] transform md:rotate-0 rotate-90">&darr;</div>
                     <div class="p-6 border-2 border-[#74A6B8] rounded-lg text-center w-full md:w-1/4">
                         <h3 class="font-bold text-[#003F5C]">3. 出力</h3>
                         <p class="text-sm">最適化された応答</p>
@@ -155,12 +161,12 @@
             </div>
         </section>
 
-        <section id="use-cases" class="my-16">
+        <section id="use-cases" class="my-12 md:my-16">
             <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
                 <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">広がる応用分野とモデルの強み</h2>
-                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">その高度な能力により、Gemini 2.5 Proはビジネスからクリエイティブ、教育まで、多岐にわたる分野で革新を促進します。特に推論、コーディング、マルチモーダル処理において優れた能力を発揮します。</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="chart-container h-80 md:h-auto">
+                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12 px-2">その高度な能力により、Gemini 2.5 Proはビジネスからクリエイティブ、教育まで、多岐にわたる分野で革新を促進します。特に推論、コーディング、マルチモーダル処理において優れた能力を発揮します。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="chart-container h-80 sm:h-96 md:h-full">
                         <canvas id="strengthsDonutChart"></canvas>
                     </div>
                     <div>
@@ -169,28 +175,28 @@
                                 <span class="text-2xl text-[#003F5C] mr-4">🏢</span>
                                 <div>
                                     <h4 class="font-bold text-[#366E8A]">エンタープライズソリューション</h4>
-                                    <p>複雑な非構造化データからの情報抽出、業務プロセスの自動化、高精度な市場分析を実現します。</p>
+                                    <p class="text-gray-700">複雑な非構造化データからの情報抽出、業務プロセスの自動化、高精度な市場分析を実現します。</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-2xl text-[#003F5C] mr-4">💻</span>
                                 <div>
                                     <h4 class="font-bold text-[#366E8A]">高度なコーディング支援</h4>
-                                    <p>プロンプトからのアプリ生成、コードのデバッグ、パフォーマンス最適化など、開発サイクルを加速します。</p>
+                                    <p class="text-gray-700">プロンプトからのアプリ生成、コードのデバッグ、パフォーマンス最適化など、開発サイクルを加速します。</p>
                                 </div>
                             </li>
                              <li class="flex items-start">
                                 <span class="text-2xl text-[#003F5C] mr-4">🔬</span>
                                 <div>
                                     <h4 class="font-bold text-[#366E8A]">リサーチとデータ分析</h4>
-                                    <p>Deep Research機能により、数百の情報源を分析し、包括的なレポートを数分で生成します。</p>
+                                    <p class="text-gray-700">Deep Research機能により、数百の情報源を分析し、包括的なレポートを数分で生成します。</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-2xl text-[#003F5C] mr-4">🎓</span>
                                 <div>
                                     <h4 class="font-bold text-[#366E8A]">教育と個別化学習</h4>
-                                    <p>LearnLMとの統合により、個々の学習者に最適化された教育コンテンツや指導を提供します。</p>
+                                    <p class="text-gray-700">LearnLMとの統合により、個々の学習者に最適化された教育コンテンツや指導を提供します。</p>
                                 </div>
                             </li>
                         </ul>
@@ -199,50 +205,50 @@
             </div>
         </section>
         
-        <section id="pricing" class="my-16">
+        <section id="pricing" class="my-12 md:my-16">
             <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
                 <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">市場における競争力：性能と価格</h2>
-                 <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">Gemini 2.5 Proは、最先端の性能を提供しつつ、戦略的な価格設定により高いコストパフォーマンスを実現しています。これにより、多くの開発者や企業が最先端AI技術へアクセスしやすくなります。</p>
+                 <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12 px-2">Gemini 2.5 Proは、最先端の性能を提供しつつ、戦略的な価格設定により高いコストパフォーマンスを実現しています。これにより、多くの開発者や企業が最先端AI技術へアクセスしやすくなります。</p>
                 <div class="chart-container">
                     <canvas id="costPerformanceChart"></canvas>
                 </div>
-                 <p class="text-center text-sm text-gray-500 mt-4">X軸: 出力価格($/1Mトークン), Y軸: GPQAベンチマークスコア(%), バブルサイズ: 入力価格</p>
+                 <p class="text-center text-sm text-gray-500 mt-4 px-2">X軸: 出力価格($/1Mトークン), Y軸: GPQAベンチマークスコア(%), バブルサイズ: 入力価格</p>
             </div>
         </section>
         
-        <section id="ecosystem" class="my-16">
+        <section id="ecosystem" class="my-12 md:my-16">
             <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
                 <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">Googleエコシステムとの深い統合</h2>
-                 <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">Gemini 2.5 Proの真価は、Googleの広範な製品群とのシームレスな統合によって発揮されます。使い慣れたツールの中で、AIが自然な形でユーザーの生産性向上を支援します。</p>
-                 <div class="relative mt-8 p-8 border-2 border-dashed border-[#74A6B8] rounded-lg">
-                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#003F5C] text-white p-6 rounded-full shadow-2xl z-10">
-                         <h3 class="text-xl font-bold">Gemini 2.5 Pro</h3>
+                 <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12 px-2">Gemini 2.5 Proの真価は、Googleの広範な製品群とのシームレスな統合によって発揮されます。使い慣れたツールの中で、AIが自然な形でユーザーの生産性向上を支援します。</p>
+                 <div class="relative mt-8 p-4 md:p-8 border-2 border-dashed border-[#74A6B8] rounded-lg">
+                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#003F5C] text-white p-4 md:p-6 rounded-full shadow-2xl z-10 w-36 h-36 md:w-48 md:h-48 flex items-center justify-center">
+                         <h3 class="text-lg md:text-xl font-bold text-center">Gemini 2.5 Pro</h3>
                      </div>
-                     <div class="grid grid-cols-2 md:grid-cols-3 gap-8 relative">
-                        <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg">
-                            <p class="font-bold text-center">Google Workspace<br>(Docs, Gmail, Sheets)</p>
+                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 relative">
+                        <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg min-h-[80px] md:min-h-[100px]">
+                            <p class="font-bold text-center text-sm md:text-base">Google Workspace<br>(Docs, Gmail, Sheets)</p>
                         </div>
-                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg">
-                            <p class="font-bold text-center">開発者ツール<br>(Code Assist, Vertex AI)</p>
+                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg min-h-[80px] md:min-h-[100px]">
+                            <p class="font-bold text-center text-sm md:text-base">開発者ツール<br>(Code Assist, Vertex AI)</p>
                         </div>
-                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg">
-                            <p class="font-bold text-center">消費者向けアプリ<br>(Gemini App)</p>
+                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg min-h-[80px] md:min-h-[100px]">
+                            <p class="font-bold text-center text-sm md:text-base">消費者向けアプリ<br>(Gemini App)</p>
                         </div>
-                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg">
-                            <p class="font-bold text-center">検索とリサーチ<br>(Deep Research)</p>
+                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg min-h-[80px] md:min-h-[100px]">
+                            <p class="font-bold text-center text-sm md:text-base">検索とリサーチ<br>(Deep Research)</p>
                         </div>
-                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg">
-                            <p class="font-bold text-center">クラウドプラットフォーム<br>(Google Cloud)</p>
+                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg min-h-[80px] md:min-h-[100px]">
+                            <p class="font-bold text-center text-sm md:text-base">クラウドプラットフォーム<br>(Google Cloud)</p>
                         </div>
-                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg">
-                            <p class="font-bold text-center">AIエージェント<br>(Project Mariner)</p>
+                         <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg min-h-[80px] md:min-h-[100px]">
+                            <p class="font-bold text-center text-sm md:text-base">AIエージェント<br>(Project Mariner)</p>
                         </div>
                      </div>
                  </div>
             </div>
         </section>
         
-        <footer class="text-center my-12 text-gray-500">
+        <footer class="text-center my-12 text-gray-500 px-4">
              <p>&copy; 2025 Gemini 2.5 Pro 動向調査. All rights reserved.</p>
              <p class="text-sm mt-2">このインフォグラフィックは「Gemini 2.5 Pro アップデート調査報告書」のデータに基づき作成されました。</p>
         </footer>
@@ -319,7 +325,13 @@
                     },
                     x: {
                         ticks: {
-                            color: brandColors.secondary
+                            color: brandColors.secondary,
+                            maxRotation: 0,
+                            minRotation: 0,
+                            callback: function(value, index, values) {
+                                const label = this.getLabelForValue(value);
+                                return wrapLabel(label, 10);
+                            }
                         },
                          grid: {
                            display: false
@@ -354,6 +366,7 @@
             
             const createStrengthsDonutChart = () => {
                 const ctx = document.getElementById('strengthsDonutChart').getContext('2d');
+                const isMobile = window.innerWidth < 768;
                 new Chart(ctx, {
                     type: 'doughnut',
                     data: {
@@ -376,7 +389,7 @@
                          maintainAspectRatio: false,
                          plugins: {
                              legend: {
-                                 position: 'right',
+                                 position: isMobile ? 'top' : 'right',
                                   labels: {
                                     color: brandColors.primary,
                                     font: {
@@ -403,7 +416,7 @@
             const createCostPerformanceChart = () => {
                 const ctx = document.getElementById('costPerformanceChart').getContext('2d');
                 const modelsData = [
-                    { label: 'Gemini 2.5 Pro', x: 10.00, y: 86.4, r: 1.25 }, // x=output price, y=GPQA score, r=input price
+                    { label: 'Gemini 2.5 Pro', x: 10.00, y: 86.4, r: 1.25 },
                     { label: 'OpenAI o3 High', x: 40.00, y: 83.3, r: 10.00 },
                     { label: 'Claude Opus 4', x: 75.00, y: 79.6, r: 15.00 },
                     { label: 'OpenAI o4-mini High', x: 4.40, y: 81.4, r: 1.10 },
@@ -420,7 +433,7 @@
                                 data: [{
                                     x: model.x,
                                     y: model.y,
-                                    r: model.r * 5 + 5
+                                    r: model.r * 4 + 4
                                 }],
                                 backgroundColor: colors[index % colors.length] + 'BF',
                                 borderColor: colors[index % colors.length],
@@ -433,6 +446,12 @@
                         plugins: {
                             legend: {
                                 position: 'top',
+                                labels: {
+                                    boxWidth: 15,
+                                    font: {
+                                        size: 10
+                                    }
+                                }
                             },
                             tooltip: {
                                 callbacks: {
@@ -465,7 +484,7 @@
                             x: {
                                 title: {
                                     display: true,
-                                    text: '出力価格 ($ / 100万トークン)',
+                                    text: '出力価格 ($ / 1Mトークン)',
                                     color: brandColors.primary
                                 }
                             }
@@ -481,3 +500,4 @@
     </script>
 </body>
 </html>
+
